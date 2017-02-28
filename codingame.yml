@@ -4,3 +4,12 @@ plan:
     statement: markdowns/part1.md
   - title: Part 2
     statement: markdowns/part2.md
+projects:
+  the-first-example:
+    root: project
+    builder:
+      name: codingame/maven3-builder
+      version: 1.0
+    runner:
+      name: codingame/junit4-runner
+      version: 2.0
