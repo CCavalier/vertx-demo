@@ -12,4 +12,4 @@ projects:
       version: 1.0
     runner:
       name: codingame/junit4-runner
-      version: 2.0
+      version: 3.0
