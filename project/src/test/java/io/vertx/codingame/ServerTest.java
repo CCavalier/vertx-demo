@@ -37,4 +37,17 @@ public class ServerTest {
       }));
     }));
   }
+
+  @Test
+  public void testFluent(TestContext ctx) throws Exception{
+    WebClient client = WebClient.create(vertx);
+    vertx.deployVerticle(FluentServer.class.getName(), ctx.asyncAssertSuccess(v -> {
+      client.get(8080, "localhost", "/").send(ctx.asyncAssertSuccess(resp -> {
+        ctx.assertEquals(200, resp.statusCode());
+        ctx.assertEquals("Hello World", resp.bodyAsString());
+        ctx.assertEquals("text/plain", resp.getHeader("Content-Type"));
+      }));
+    }));
+
+  }
 }
