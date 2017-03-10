@@ -7,9 +7,7 @@ plan:
 projects:
   the-first-example:
     root: project
-    builder:
-      name: codingame/maven3-builder
-      version: 1.0
     runner:
-      name: codingame/junit4-runner
-      version: 3.0
+     name: codingame/java-maven3-junit4-runner
+     version: 1.1.0-java-8
+
