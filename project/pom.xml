@@ -13,20 +13,20 @@
     <dependency>
       <groupId>io.vertx</groupId>
       <artifactId>vertx-core</artifactId>
-      <version>3.4.0.Beta1</version>
+      <version>3.4.0</version>
     </dependency>
 
     <dependency>
       <groupId>io.vertx</groupId>
       <artifactId>vertx-unit</artifactId>
-      <version>3.4.0.Beta1</version>
+      <version>3.4.0</version>
       <scope>test</scope>
     </dependency>
 
     <dependency>
       <groupId>io.vertx</groupId>
       <artifactId>vertx-web-client</artifactId>
-      <version>3.4.0.Beta1</version>
+      <version>3.4.0</version>
       <scope>test</scope>
     </dependency>
 
