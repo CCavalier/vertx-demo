@@ -15,7 +15,7 @@ public class FluentServer extends AbstractVerticle {
         HttpServer server = vertx.createHttpServer();
 
         server.requestHandler(req -> {
-            //complete Here;
+            req.response().end("Ok");
         });
 
         server.listen(8080, ar -> {
