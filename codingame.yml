@@ -1,4 +1,4 @@
-title : Dive into Vert.x 3
+title : Dive into Vert.x 
 plan:
   - title: Your first verticle!
     statement: markdowns/part1.md
