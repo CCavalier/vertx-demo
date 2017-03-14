@@ -44,8 +44,8 @@ public class ServerTest {
     vertx.deployVerticle(FluentServer.class.getName(), ctx.asyncAssertSuccess(v -> {
       client.get(8080, "localhost", "/").send(ctx.asyncAssertSuccess(resp -> {
         ctx.assertEquals(200, resp.statusCode());
-        ctx.assertEquals("Hello World", resp.bodyAsString());
-        ctx.assertEquals("text/plain", resp.getHeader("Content-Type"));
+        ctx.assertEquals("Your body should be Hello World","Hello World", resp.bodyAsString());
+        ctx.assertEquals("The content type of your header should be content type","text/plain", resp.getHeader("Content-Type"));
       }));
     }));
 
